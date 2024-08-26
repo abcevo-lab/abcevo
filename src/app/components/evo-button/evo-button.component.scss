@@ -1,0 +1,287 @@
+.mat-button {
+  &.evo-button {
+    border-width: 0px;
+    // font-size: $font-size-button;
+    font-size: 16px;
+    color: $color-text-white;
+    // border-radius: $border-radius;
+    border-radius: 6px;
+    height: calc(2rem + 4px);
+    min-height: calc(2rem + 4px);
+    padding: 0 $space-size-md;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+  }
+  &.primary {
+    background-color: $color-background-primary;
+    // color: $color-text-white;
+    // border-radius: $border-radius;
+  }
+}
+
+// .mat-button{
+
+//     &.evo-button{
+//       border-width: 0px;
+//       font-size: $font-size-button;
+//       color: $color-text-medium;
+//       border-radius: $border-radius;
+//       height: calc(2rem + 4px);
+//       min-height: calc(2rem + 4px);
+//       padding: 0 $space-size-md;
+//       text-transform: uppercase;
+//       display: flex;
+//       align-items: center;
+  
+//       &.noRadius {
+//         border-radius: 0!important;
+//       }
+//       &.noSpacing {
+//         margin: 0 !important;
+  
+//       }
+//       mat-icon{
+//         font-size: $font-size-icon-button;
+//         max-width: 24px;
+//         max-height: 24px;
+  
+//         &:not(.only-icon) {
+//           padding-right: $space-size-xs;
+//         }
+//         &.amber {
+//           color: $color-text-amber !important;
+//         }
+//       }
+  
+//       &.agrupado {
+//         background-color: $grey-100;
+//       }
+//       // VARIAÇÃO DE TAMANHO
+//       &.small {
+//         font-size: $font-size-button-small;
+//         height: calc(1rem * 2);
+//         min-height: calc(1rem * 2);
+//         display: flex;
+//         align-items: center;
+//         padding: 0 $space-size-sm;
+  
+//         mat-icon{
+//           font-size: $font-size-icon-button-small;
+//           display: flex;
+//           align-items: center;
+//           max-width: 18px;
+//           max-height: 18px;
+//         }
+  
+//         .mat-button-wrapper{
+//           display: flex;
+//           align-items: center;
+//         }
+//       }
+//       // TIPOS
+//       &.primary {
+//         @include primary;
+//         border-radius: $border-radius;
+//       }
+//       &.secondary {
+//         &:not([disabled]) {
+//           @include secondary;
+//         }
+//       }
+//       &.tertiary {
+//         @include tertiary;
+//         border-width: 0;
+//         border-color: transparent;
+  
+//         &.agrupado {
+//           background-color: $grey-100;
+//           border: 1px solid $grey-300;
+  
+//           &:not(:first-child):not(:last-child) {
+//             border-radius: 0;
+//           }
+//         }
+  
+//         &:hover {
+//           &:not([disabled]) {
+//             cursor: pointer;
+//           }
+//         }
+//       }
+//       &.link {
+//         @include link;
+//         border-width: 0;
+//         border-color: transparent;
+//         text-transform: none;
+  
+//         &:hover {
+//           &:not([disabled]) {
+//             cursor: pointer;
+//           }
+//         }
+//       }
+//       &.warning{
+//         @include warning;
+//       }
+//       &.success {
+//         @include success-background;
+  
+//         &[disabled] {
+//           color: #BDBDBD;
+//         }
+//       }
+//       &.danger {
+//         @include danger;
+//       }
+//       &.danger-light {
+//         color: $red;
+//         background-color: $red-50;
+//         border: 1px solid $red-50;
+//       }
+//       &.success-light {
+//         color: $green;
+//         background-color: $green-50;
+//         border: 1px solid $green-50;
+//       }
+//       &.dropdown {
+//         padding-right: 0.5rem;
+  
+//         .mat-icon, i, .material-icons {
+//           font-size: $font-size-icon-button;
+//         }
+//       }
+//       &:not(.mat-icon-button){
+//         &[disabled] {
+//           // cursor: not-allowed;
+//           background: $grey-300;
+  
+  
+//         }
+//       }
+//       &[disabled] {
+//         .mat-icon, .material-icons {
+//           color: $color-icon-medium-alpha;
+//           background-color: transparent;
+//         }
+//       }
+//       mat-button:focus {
+//         outline: none;
+  
+//         // &:not(.mat-icon-button){
+//           background-color: $color-background-grey-300;
+//         // }
+//       }
+//       &.button-principal-filters{
+//         font-size: $font-size-button-small !important;
+//         height: 32px;
+//         line-height: 32px;
+//         text-transform: capitalize;
+//       }
+  
+//       &.button-principal-filters{
+//         font-size: $font-size-button-small !important;
+//         height: 32px;
+//         line-height: 32px;
+//         text-transform: capitalize;
+//       }
+  
+//     }
+//   }
+  
+//   .mat-icon-button{
+//     @extend .mat-button;
+//     &:not(.secondary) {
+//       background-color: transparent !important;
+//     }
+//     padding: 0 .5rem !important;
+  
+//     &[disabled] {
+//       color: $color-icon-medium-alpha;
+//       background-color: transparent;
+//     }
+  
+//     &.small {
+//       font-size: $font-size-icon-button-small;
+//     }
+  
+//     &.large{
+//       font-size: 24px;
+  
+//       &:focus{
+//         background-color: transparent !important;
+//       }
+  
+//       &:active{
+//         background-color: transparent !important;
+//       }
+//     }
+  
+//     &:not(.link){
+//       .mat-icon{
+  
+//         .small{
+//           font-size: 18px !important;
+//         }
+  
+//         font-size: $font-size-icon-button;
+//         color: $color-icon-medium-alpha;
+//       }
+//     }
+  
+//     &.link{
+//       color: $color-text-primary;
+//     }
+  
+  
+//   }
+  
+//   :root {
+//     --largura-menu: 0;
+//   }
+  
+//   .container-button-dropdown{
+//     border: 1px solid $color-background-grey-300;
+//     background-color: $color-background-grey-100;
+  
+//     .label-dropdown{
+//       font-size: $font-size-button-sm;
+//       font-weight: $font-weight-regular;
+//       color: black;
+//     }
+  
+//     .label-select{
+//       font-size: $font-size-button-sm;
+//       font-weight: $font-weight-bold;
+//       color: black;
+//     }
+  
+//     .container-menu-buttons-dropdown{
+//       width: calc(var(--largura-menu)) !important;
+//     }
+  
+//     .icon-arrow-down{
+//       color: $color-icon-medium;
+//       font-size: $font-size-icon-sm;
+//       margin-left: $space-size-xs;
+//     }
+  
+//   }
+  
+  
+//   .mat-list-item {
+  
+//     &:hover{
+//       cursor: pointer;
+//     }
+  
+//     .icone-done{
+//       color: $color-text-primary;
+//       margin-left: .5rem;
+//       font-size: 24px;
+//     }
+//   }
+//   .force-text-captalize {
+//     text-transform: capitalize;
+//   }

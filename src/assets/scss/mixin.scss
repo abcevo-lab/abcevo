@@ -1,0 +1,39 @@
+@mixin primary {
+    background-color: $color-background-primary;
+    color: $color-text-white;
+}
+ 
+@mixin secondary {
+    background-color: $color-background-secondary;
+    color: $color-text-deep-purple;
+}
+ 
+@mixin tertiary {
+    background-color: $color-text-white;
+    color:$color-text-medium;
+}
+ 
+@mixin link {
+    background-color: transparent;
+    color: $color-text-primary;
+}
+ 
+@mixin warning {
+    background-color: $color-background-orange;
+    color: $color-text-orange;
+}
+ 
+@mixin danger {
+    background-color: $color-background-red;
+    color: $color-text-white;
+}
+ 
+@mixin success {
+    background-color:  $color-background-green;
+    color: $color-text-green;
+}
+ 
+@mixin success-background {
+    background-color:  $color-background-green-500;
+    color: $color-text-white;
+}

@@ -1,0 +1,87 @@
+
+<button
+    *ngIf="!onlyIcon && typeButton == 'default'"
+    mat-button
+    fxLayout="row"
+    fxLayoutAlign="center center"
+    [style.width]="largura()"
+    class="m-x-xs evo-button"
+    (click)="clickBtn(item, $event);"
+    form="evoFormDefault"
+    [type]="type || 'button'"
+    [disabled]="disabled"
+    [ngClass]="{
+        'small': size == 'small',
+        'primary':  tipo == 'primary',
+        'secondary':  tipo == 'secondary',
+        'tertiary':  tipo == 'tertiary',
+        'link':  tipo == 'link',
+        'success':  tipo == 'success',
+        'warning':  tipo == 'warning',
+        'danger':  tipo == 'danger',
+        'danger-light': tipo == 'danger-light',
+        'success-light': tipo == 'success-light',
+        'noSpacing': noSpacing,
+        'm-x-xs': !noSpacing,
+        'agrupado': agrupado
+     }">
+        <mat-icon *ngIf="icon">{{icon}}</mat-icon>
+        <ng-content></ng-content>
+</button>
+
+<button
+    *ngIf="onlyIcon || typeButton == 'onlyIcon'"
+    mat-icon-button
+    class="icone-small evo-button"
+    (click)="clickBtn(item, $event);"
+    [disabled]="disabled"
+    [style.width]="largura()"
+    [color]="color"
+    [type]="type || 'button'"
+    fxLayout="row"
+    fxLayoutAlign="{{onlyIcon ? 'center' : 'start'}} center"
+    [ngClass]="{
+        'small': size == 'small',
+        'large': size == 'large',
+        'primary':  tipo == 'primary',
+        'secondary':  tipo == 'secondary',
+        'tertiary':  tipo == 'tertiary',
+        'link':  tipo == 'link',
+        'success':  tipo == 'success',
+        'warning':  tipo == 'warning',
+        'danger':  tipo == 'danger',
+        'danger-light': tipo == 'danger-light',
+        'success-light': tipo == 'success-light',
+        'noSpacing': noSpacing == true,
+        'm-x-xs': !noSpacing
+     }">
+    <mat-icon [ngClass]="{
+        'amber': colorIcon == 'amber',
+        'only-icon': onlyIcon
+    }" >{{icon}}</mat-icon>
+</button>
+
+<ng-container *ngIf="typeButton == 'dropdown'">
+    <div class="container-button-dropdown">
+        <button mat-button [matMenuTriggerFor]="menu" #itemMenu class="small" style="padding: 0 8px !important;">
+            <span class="label-dropdown">{{label}}: </span>
+            <span class="label-select">{{ opcaoSelecionada }}</span>
+            <i class="material-icons icon-arrow-down">keyboard_arrow_down</i>
+        </button>
+
+        <mat-menu #menu="matMenu" class="container-menu-buttons-dropdown">
+            <mat-list *ngFor="let item of opcoes; let i = index">
+                <mat-list-item
+                    class="item-one-selection"
+                    (click)="clickOpc( i, opcoes, item)">
+                    {{ item.text }}
+                    <mat-icon class="icone-done" *ngIf="item == itemEscolhido">done</mat-icon>
+                </mat-list-item>
+            </mat-list>
+        </mat-menu>
+    </div>
+</ng-container>
+
+
+
+

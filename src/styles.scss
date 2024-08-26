@@ -1,0 +1,28 @@
+// Global color style material design 2 
+@import './assets/scss/md-palette';
+
+// Brand tokens
+@import './assets/scss/tokens/brand/brand';
+
+// Global tokens
+@import './assets/scss/tokens/global/color';
+@import './assets/scss/tokens/global/background';
+@import './assets/scss/tokens/global/border-radius';
+@import './assets/scss/tokens/global/border';
+@import './assets/scss/tokens/global/breakpoints';
+@import './assets/scss/tokens/global/font-family';
+@import './assets/scss/tokens/global/font-size';
+@import './assets/scss/tokens/global/font-weight';
+@import './assets/scss/tokens/global/icon';
+@import './assets/scss/tokens/global/line-height';
+@import './assets/scss/tokens/global/shadow';
+@import './assets/scss/tokens/global/spacing';
+
+// Mixin
+@import './assets/scss/mixin';
+
+// Import component style
+@import './app/components/evo-button/evo-button.component';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

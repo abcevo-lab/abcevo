@@ -1,0 +1,13 @@
+{
+  "color": {
+    "text": {
+      "white": { "value": "#ffffff" }
+    },
+    "brand": {
+      "primary": { "value": "#5e35b1" }
+    },
+    "background": {
+      "primary": { "value": "{color.brand.primary}" }
+    }
+  }
+}
