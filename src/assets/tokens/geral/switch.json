@@ -1,0 +1,28 @@
+{
+  "switch": {
+    "track": {
+      "borderRadius": {
+        "value": "{global.spacing.max}",
+        "type": "borderRadius"
+      },
+      "height": {
+        "value": "{global.spacing.5}",
+        "type": "dimension"
+      },
+      "width": {
+        "value": "{global.spacing.8}",
+        "type": "dimension"
+      }
+    },
+    "thumb": {
+      "borderRadius": {
+        "value": "{global.spacing.max}",
+        "type": "borderRadius"
+      },
+      "size": {
+        "value": "{global.spacing.4}",
+        "type": "dimension"
+      }
+    }
+  }
+}

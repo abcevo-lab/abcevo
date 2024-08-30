@@ -1,0 +1,14 @@
+{
+  "select": {
+    "padding": {
+      "vertical": {
+        "value": "{global.spacing.2}",
+        "type": "dimension"
+      },
+      "horizontal": {
+        "value": "{global.spacing.4}",
+        "type": "dimension"
+      }
+    }
+  }
+}

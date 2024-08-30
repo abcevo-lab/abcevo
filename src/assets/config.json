@@ -1,0 +1,47 @@
+{
+  "source": ["tokens.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "build/scss/NOVO/",
+      "files": [
+        {
+          "destination": "_global.scss",
+          "format": "scss/variables",
+          "filter": {
+            "attributes": {
+              "category": "global"
+            }
+          }
+        },
+        {
+          "destination": "_button.scss",
+          "format": "scss/variables",
+          "filter": {
+            "attributes": {
+              "category": "button"
+            }
+          }
+        },
+        {
+          "destination": "_select.scss",
+          "format": "scss/variables",
+          "filter": {
+            "attributes": {
+              "category": "select"
+            }
+          }
+        },
+        {
+          "destination": "_switch.scss",
+          "format": "scss/variables",
+          "filter": {
+            "attributes": {
+              "category": "switch"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

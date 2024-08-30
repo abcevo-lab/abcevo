@@ -1,10 +1,11 @@
 {
   "name": "angular",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "style-dictionary build",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -22,7 +23,10 @@
     "@angular/platform-browser": "~9.1.13",
     "@angular/platform-browser-dynamic": "~9.1.13",
     "@angular/router": "~9.1.13",
+    "@tokens-studio/sd-transforms": "^0.11.10",
+    "commonjs": "^0.0.1",
     "rxjs": "~6.5.4",
+    "style-dictionary-utils": "^3.1.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
@@ -41,11 +45,20 @@
     "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
+    "prettier": "^3.3.3",
     "protractor": "~7.0.0",
     "sass": "^1.77.8",
     "sass-loader": "^10.0.0",
+    "style-dictionary": "^4.1.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.8.3"
-  }
+    "typescript": "~3.8.3",
+    "webpack": "^4.47.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "description": "This example code is bare-bones to show you what this framework can do. If you have the style-dictionary module installed globally, you can `cd` into this directory and run: ```bash style-dictionary build ```",
+  "main": "config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
